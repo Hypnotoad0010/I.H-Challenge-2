@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-image: url(https://1r65612jvqxn8fcup46pve6b-wpengine.netdna-ssl.com/wp-content/uploads/2016/04/clear-impact-state-government-background-header.jpg)
+  
+}
+
+h1 {
+  margin: 2%;
+  font-size: 200%;
+  font-family: Lucida Handwriting;
+  color: #fff;
+}
+
+
+h2 {
+  margin: 3% 0;
+  font-size: 180%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+
+
+h3 {
+  font-size: 150%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+aside {
+  flex: 3;
+  padding: 70px;
+  text-align: left;
+  border: 3px solid rgb(25, 37, 54);
+  
+}
+
+
+
+.products {
+  flex: 4;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+
+.card {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 20px;
+  flex: 0 0 300px;
+  box-shadow: 5px 5px 5px #aaaaaa;
+  margin: 20px;
+}
+
+.card p {
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #3f96e7;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header, main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
